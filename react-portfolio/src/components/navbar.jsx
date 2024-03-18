@@ -8,7 +8,7 @@ export default function Navbar() {
         <li><a href="/about-me">About Me</a></li>
         <li><a href="/resume">Resume</a></li>
         <li><a href="/contact-page">Contact Page</a></li>
-        <li><a href="/github">Github</a></li>
+        <li><a href="https://github.com/Armond-Guze" target="_blank" rel="noopener noreferrer">Github</a></li>
       </ul>
     </nav>
   );
