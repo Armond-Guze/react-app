@@ -6,9 +6,9 @@ export default function Navbar() {
       </a>
       <ul>
         <li><a href="/about-me">About Me</a></li>
-        <li><a href="/about-me">Resume</a></li>
-        <li><a href="/about-me">Contact Page</a></li>
-        <li><a href="/about-me">Github Account</a></li>
+        <li><a href="/resume">Resume</a></li>
+        <li><a href="/contact-page">Contact Page</a></li>
+        <li><a href="/github">Github</a></li>
       </ul>
     </nav>
   );
