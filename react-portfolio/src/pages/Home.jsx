@@ -1,3 +1,4 @@
+import backgroundImage from "../assets/background.jpg";
 export default function AboutMe() {
   return (
     <section style={styles.container}>
@@ -6,11 +7,12 @@ export default function AboutMe() {
       </div>
       <div style={styles.box}>
         <p>
-          I am a Full-Stack developer with skills in HTML, CSS, Javascript, React, Node.js,
-          and other web technologies. I have experience working on multiple projects
-          including building web applications, responsive designs,
-          optimizing performance, working with developers. My goal is to continue learning and growing
-          in the field of web development to create impactful and innovative solutions.
+          I am a Full-Stack developer with skills in HTML, CSS, Javascript,
+          React, Node.js, and other web technologies. I have experience working
+          on multiple projects including building web applications, responsive
+          designs, optimizing performance, working with developers. My goal is
+          to continue learning and growing in the field of web development to
+          create impactful and innovative solutions.
         </p>
       </div>
     </section>
@@ -19,28 +21,30 @@ export default function AboutMe() {
 
 const styles = {
   container: {
-    display: 'flex',
-    flexDirection: 'column', // Arrange items vertically
-    justifyContent: 'center', // Center items horizontally
-    alignItems: 'center',
-    minHeight: '100vh',
-   
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    alignItems: "center",
+    minHeight: "100vh",
   },
   headingBox: {
-    width: '100%',
-    textAlign: 'center',
-    marginBottom: '20px', // Space below the heading box
+    width: "100%",
+    textAlign: "center",
+    marginBottom: "20px",
   },
   heading: {
-    fontFamily: 'Arial, sans-serif',
-    fontSize: '45px', // Increased font size to 36px
-    textAlign: 'center',
+    fontFamily: "Arial, sans-serif",
+    fontSize: "45px",
+    textAlign: "center",
   },
   box: {
-    border: '2px solid',
-    borderRadius: '10px',
-    padding: '20px',
-    maxWidth: '800px',
-    fontSize: '20px'
+    border: "2px solid",
+    borderRadius: "10px",
+    padding: "20px",
+    maxWidth: "800px",
+    fontSize: "20px",
   },
 };

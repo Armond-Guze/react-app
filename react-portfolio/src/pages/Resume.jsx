@@ -1,3 +1,4 @@
+import backgroundImage from '../assets/background.jpg'
 export default function Resume() {
   return (
     <section style={styles.container}>
@@ -21,6 +22,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column', 
     justifyContent: 'center', 
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     alignItems: 'center',
     minHeight: '100vh',
   },
