@@ -1,31 +1,23 @@
-import Navbar from "./components/navbar";
 import Home from "./pages/Home";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Resume from "./pages/Resume";
-import ContactPage from "./pages/ContactPage";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import "../styles/Navbar.css";
+import "../styles/App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
-  let Component;
-  switch (window.location.pathname) {
-    case "/resume":
-      Component = Resume;
-      break;
-    case "/contact-page":
-      Component = ContactPage;
-      break;
-    default:
-      Component = Home;
-  }
-
-  if (!Component) {
-    return null;
-  }
-
   return (
-    <>
-      <Navbar />
-      <Component />
-    </>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
